@@ -14,15 +14,17 @@ export function Hero() {
       {/* Subtle top glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-96 bg-primary-600/10 blur-[100px] pointer-events-none" />
 
+      {/* Background Graphic */}
+      <div className="absolute inset-0 pointer-events-none flex justify-center items-center opacity-40 z-0">
+        <Image 
+          src="/Spread.svg" 
+          alt="Background Spread Decoration" 
+          fill
+          className="object-cover object-center"
+        />
+      </div>
+
       <div className="container mx-auto px-4 md:px-6 relative z-10 text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-accent-gold/30 text-xs font-bold text-accent-gold uppercase tracking-widest mb-8 bg-accent-gold/10 backdrop-blur-md"
-        >
-          Kementerian Komunikasi dan Digital
-        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}

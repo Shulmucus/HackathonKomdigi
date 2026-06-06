@@ -20,8 +20,13 @@ const timelineEvents = [
 
 export function Timeline() {
   return (
-    <section id="timeline" className="py-24 relative bg-gray-50">
-      <div className="container mx-auto px-4 md:px-6">
+    <section id="timeline" className="py-24 relative bg-gray-50 overflow-hidden">
+      {/* Geometric Decorations */}
+      <div className="absolute top-1/4 -left-32 w-[600px] h-[600px] border-[40px] border-accent-gold/5 rounded-full pointer-events-none" />
+      <div className="absolute bottom-1/4 -right-10 w-80 h-80 border-[20px] border-primary-500/5 rotate-45 pointer-events-none" />
+      <div className="absolute top-10 right-20 w-40 h-40 bg-accent-red/5 rounded-full blur-2xl pointer-events-none" />
+
+      <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="text-center mb-16">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}

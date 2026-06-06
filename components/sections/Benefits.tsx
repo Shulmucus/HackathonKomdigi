@@ -18,7 +18,12 @@ export function Benefits() {
 
   return (
     <section id="benefits" className="py-16 lg:py-24 relative overflow-hidden bg-white">
-      <div className="container mx-auto px-4 md:px-6">
+      {/* Geometric Decorations */}
+      <div className="absolute -top-20 -left-20 w-[500px] h-[500px] border-[40px] border-accent-gold/5 rounded-full pointer-events-none" />
+      <div className="absolute bottom-10 -right-20 w-80 h-80 border-[24px] border-primary-400/5 rotate-12 pointer-events-none" />
+      <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-primary-500/5 blur-3xl rounded-full pointer-events-none" />
+
+      <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="text-center mb-16">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}

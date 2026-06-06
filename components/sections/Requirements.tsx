@@ -15,7 +15,12 @@ const requirements = [
 export function Requirements() {
   return (
     <section id="requirements" className="py-16 lg:py-24 relative overflow-hidden bg-primary-700">
-      <div className="container mx-auto px-4 md:px-6">
+      {/* Geometric Decorations */}
+      <div className="absolute -top-40 -right-40 w-[600px] h-[600px] border-[60px] border-white/5 rounded-full pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-accent-gold/10 blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/2 left-20 w-32 h-32 border-[12px] border-white/10 rotate-12 pointer-events-none" />
+
+      <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="text-center mb-16">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
