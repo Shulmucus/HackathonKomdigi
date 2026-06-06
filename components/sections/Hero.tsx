@@ -74,13 +74,14 @@ export function Hero() {
             Daftar Hackathon
             <ChevronRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
           </Link>
-          <Link
-            href="#"
+          <a
+            href="/Hackathon%20Internal%20KOMDIGI%202026%20Booklet%20Cover.pdf"
+            download
             className="w-full sm:w-auto flex items-center justify-center h-12 px-8 rounded-lg bg-white/5 hover:bg-white/10 border border-white/20 text-base font-semibold text-white transition-colors group"
           >
             <Download className="w-4 h-4 mr-2" />
             Download Booklet
-          </Link>
+          </a>
         </motion.div>
       </div>
     </section>

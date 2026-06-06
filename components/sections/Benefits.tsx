@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Trophy, Gift, Award, Medal, BookOpen, GraduationCap } from "lucide-react";
+import Image from "next/image";
 
 export function Benefits() {
   const winnerBenefits = [
@@ -22,6 +23,16 @@ export function Benefits() {
       <div className="absolute -top-20 -left-20 w-[500px] h-[500px] border-[40px] border-accent-gold/5 rounded-full pointer-events-none" />
       <div className="absolute bottom-10 -right-20 w-80 h-80 border-[24px] border-primary-400/5 rotate-12 pointer-events-none" />
       <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-primary-500/5 blur-3xl rounded-full pointer-events-none" />
+
+      {/* Background Graphic */}
+      <div className="absolute inset-0 pointer-events-none flex justify-center items-center opacity-5 z-0 overflow-hidden">
+        <Image 
+          src="/HACKATHON WARNA HORIZONTAL.png" 
+          alt="Hackathon Logo Watermark" 
+          fill
+          className="object-contain object-center scale-150 md:scale-125 lg:scale-100"
+        />
+      </div>
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="text-center mb-16">
