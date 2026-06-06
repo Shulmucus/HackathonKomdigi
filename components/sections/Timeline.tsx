@@ -20,14 +20,14 @@ const timelineEvents = [
 
 export function Timeline() {
   return (
-    <section id="timeline" className="py-24 relative">
+    <section id="timeline" className="py-24 relative bg-gray-50">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-5xl font-bold text-white mb-4"
+            className="text-3xl md:text-5xl font-bold text-gray-900 mb-4"
           >
             Linimasa Kegiatan
           </motion.h2>
@@ -36,7 +36,7 @@ export function Timeline() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-gray-400 max-w-2xl mx-auto"
+            className="text-gray-600 max-w-2xl mx-auto"
           >
             Perjalanan inovasi Anda dimulai di sini. Catat tanggal-tanggal penting berikut.
           </motion.p>
@@ -44,7 +44,7 @@ export function Timeline() {
 
         <div className="max-w-4xl mx-auto relative">
           {/* Vertical Line */}
-          <div className="absolute left-[20px] md:left-1/2 top-0 bottom-0 w-px bg-white/10 md:-translate-x-1/2" />
+          <div className="absolute left-[20px] md:left-1/2 top-0 bottom-0 w-px bg-gray-300 md:-translate-x-1/2" />
 
           <div className="space-y-12">
             {timelineEvents.map((event, index) => {
@@ -61,17 +61,17 @@ export function Timeline() {
                   } flex-row`}
                 >
                   {/* Timeline Dot */}
-                  <div className="absolute left-[20px] md:left-1/2 w-3 h-3 bg-primary-500 rounded-full md:-translate-x-1/2 -translate-x-[5px] shadow-[0_0_10px_rgba(0,64,255,0.8)] z-10" />
+                  <div className="absolute left-[20px] md:left-1/2 w-4 h-4 bg-accent-gold rounded-full md:-translate-x-1/2 -translate-x-[7px] border-4 border-white shadow-sm z-10" />
 
                   <div
-                    className={`ml-12 md:ml-0 md:w-1/2 p-6 glass rounded-2xl border border-white/5 hover:border-primary-500/30 transition-colors ${
+                    className={`ml-12 md:ml-0 md:w-1/2 p-6 bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md hover:border-accent-gold transition-all ${
                       isEven ? "md:ml-auto md:pl-12" : "md:mr-auto md:pr-12"
                     }`}
                   >
-                    <div className="font-mono text-primary-400 font-semibold mb-2 tracking-wider text-sm">
+                    <div className="font-mono text-primary-600 font-semibold mb-2 tracking-wider text-sm">
                       {event.date}
                     </div>
-                    <h3 className="text-xl font-bold text-white">{event.title}</h3>
+                    <h3 className="text-xl font-bold text-gray-900">{event.title}</h3>
                   </div>
                 </motion.div>
               );

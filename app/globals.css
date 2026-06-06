@@ -1,12 +1,24 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary-500: #0040ff;
-  --color-primary-400: #37b2e8;
-  --color-primary-600: #002ecc;
+  --color-primary-400: #29abe2; /* blue-sky */
+  --color-primary-500: #0052a5; /* blue */
+  --color-primary-600: #1a6fcc; /* blue-mid */
+  --color-primary-700: #003b7a; /* blue-dark */
+  
+  --color-accent-gold: #ffbe00; /* gold-bright */
+  --color-accent-red: #cc2222; /* red-bright */
   
   --font-sans: var(--font-plus-jakarta-sans);
   --font-mono: var(--font-geist-mono);
+
+  --animate-marquee: marquee 30s linear infinite;
+  
+  @keyframes marquee {
+    to {
+      transform: translateX(-50%);
+    }
+  }
 }
 
 @layer base {

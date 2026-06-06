@@ -6,6 +6,7 @@ import { Timeline } from "@/components/sections/Timeline";
 import { Requirements } from "@/components/sections/Requirements";
 import { Benefits } from "@/components/sections/Benefits";
 import { FAQ } from "@/components/sections/FAQ";
+import { Ticker } from "@/components/sections/Ticker";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Header />
       <main className="flex-grow">
         <Hero />
+        <Ticker />
         <StrategicAlignment />
         <Timeline />
         <Requirements />

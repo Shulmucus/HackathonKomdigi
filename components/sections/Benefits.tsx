@@ -17,14 +17,14 @@ export function Benefits() {
   ];
 
   return (
-    <section id="benefits" className="py-24 relative overflow-hidden bg-gray-950">
+    <section id="benefits" className="py-16 lg:py-24 relative overflow-hidden bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-5xl font-bold text-white mb-4"
+            className="text-3xl md:text-5xl font-bold text-gray-900 mb-4"
           >
             Benefit Peserta
           </motion.h2>
@@ -33,7 +33,7 @@ export function Benefits() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-gray-400 max-w-2xl mx-auto"
+            className="text-gray-600 max-w-2xl mx-auto"
           >
             Berbagai keuntungan yang bisa Anda dapatkan dengan mengikuti Hackathon Internal Komdigi 2026.
           </motion.p>
@@ -46,25 +46,25 @@ export function Benefits() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-[#0f111a] p-8 rounded-2xl border border-yellow-500/30 relative overflow-hidden group"
+            className="bg-[#FFF8E1] p-8 rounded-2xl border border-[#E6C56A] relative overflow-hidden group shadow-sm"
           >
             <div className="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
-              <Trophy className="w-32 h-32 text-yellow-400" />
+              <Trophy className="w-32 h-32 text-yellow-500" />
             </div>
             
-            <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-3">
-              <span className="text-yellow-400">Bagi Pemenang</span>
+            <h3 className="text-2xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+              <span className="text-yellow-600">Bagi Pemenang</span>
             </h3>
             
             <div className="space-y-6 relative z-10">
               {winnerBenefits.map((b, i) => (
                 <div key={i} className="flex items-start gap-4">
-                  <div className="p-3 glass rounded-xl border border-yellow-500/20 bg-yellow-500/10">
+                  <div className="p-3 bg-white rounded-xl border border-yellow-200 shadow-sm">
                     {b.icon}
                   </div>
                   <div>
-                    <h4 className="text-lg font-bold text-white">{b.title}</h4>
-                    <p className="text-yellow-200/70">{b.desc}</p>
+                    <h4 className="text-lg font-bold text-gray-900">{b.title}</h4>
+                    <p className="text-gray-700">{b.desc}</p>
                   </div>
                 </div>
               ))}
@@ -77,21 +77,21 @@ export function Benefits() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="bg-[#0f111a] p-8 rounded-2xl border border-white/10 relative overflow-hidden group hover:border-primary-500/30 transition-colors"
+            className="bg-[#E8F1FB] p-8 rounded-2xl border border-[#A0C3F0] relative overflow-hidden group shadow-sm hover:border-primary-400 transition-colors"
           >
-            <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-3">
-              <span className="text-primary-400">Bagi Seluruh Peserta</span>
+            <h3 className="text-2xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+              <span className="text-primary-600">Bagi Seluruh Peserta</span>
             </h3>
             
             <div className="space-y-6 relative z-10">
               {participantBenefits.map((b, i) => (
                 <div key={i} className="flex items-start gap-4">
-                  <div className="p-3 glass rounded-xl border border-primary-500/20 bg-primary-500/10">
+                  <div className="p-3 bg-white rounded-xl border border-blue-200 shadow-sm">
                     {b.icon}
                   </div>
                   <div>
-                    <h4 className="text-lg font-bold text-white">{b.title}</h4>
-                    <p className="text-gray-400">{b.desc}</p>
+                    <h4 className="text-lg font-bold text-gray-900">{b.title}</h4>
+                    <p className="text-gray-700">{b.desc}</p>
                   </div>
                 </div>
               ))}

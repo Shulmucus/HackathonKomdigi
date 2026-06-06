@@ -7,7 +7,7 @@ import { ChevronRight, Download } from "lucide-react";
 
 export function Hero() {
   return (
-    <section id="about" className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-gray-950">
+    <section id="about" className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-primary-700">
       {/* Authentic tech pattern background */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-30" />
       
@@ -19,7 +19,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 text-xs font-semibold text-gray-300 uppercase tracking-widest mb-8 bg-black/20 backdrop-blur-md"
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-accent-gold/30 text-xs font-bold text-accent-gold uppercase tracking-widest mb-8 bg-accent-gold/10 backdrop-blur-md"
         >
           Kementerian Komunikasi dan Digital
         </motion.div>
@@ -52,7 +52,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          className="mt-6 text-lg md:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed"
+          className="mt-6 text-lg md:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed"
         >
           Seluruh solusi dan inovasi yang tercipta dari Hackathon Internal KOMDIGI diharapkan dapat diimplementasikan secara nyata melalui sebuah Dashboard Decision Support yang mengintegrasikan berbagai use case berbasis AI.
           <br className="hidden md:block mt-2" />
@@ -67,7 +67,7 @@ export function Hero() {
         >
           <Link
             href="#"
-            className="w-full sm:w-auto flex items-center justify-center h-12 px-8 rounded-lg bg-primary-600 hover:bg-primary-500 text-base font-semibold text-white transition-colors group"
+            className="w-full sm:w-auto flex items-center justify-center h-12 px-8 rounded-lg bg-accent-gold hover:bg-yellow-400 text-base font-extrabold text-primary-700 transition-colors group shadow-lg shadow-accent-gold/20"
           >
             Daftar Hackathon
             <ChevronRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />

@@ -28,7 +28,7 @@ export function FAQ() {
   const [activeIndex, setActiveIndex] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="py-24 relative bg-white/5">
+    <section id="faq" className="py-16 lg:py-24 relative bg-gray-50">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-16">
@@ -36,7 +36,7 @@ export function FAQ() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-3xl md:text-5xl font-bold text-white mb-4"
+              className="text-3xl md:text-5xl font-bold text-gray-900 mb-4"
             >
               Frequently Asked Questions
             </motion.h2>
@@ -45,7 +45,7 @@ export function FAQ() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-gray-400"
+              className="text-gray-600"
             >
               Pertanyaan yang sering diajukan seputar Hackathon Internal Komdigi 2026.
             </motion.p>
@@ -56,24 +56,20 @@ export function FAQ() {
               const isActive = activeIndex === index;
 
               return (
-                <motion.div
+                  <div
                   key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
-                  className={`glass rounded-2xl border transition-all ${
-                    isActive ? "border-primary-500/50 bg-white/10" : "border-white/5 hover:border-white/20"
+                  className={`bg-white rounded-2xl border shadow-sm transition-all ${
+                    isActive ? "border-primary-400 shadow-md ring-1 ring-primary-400" : "border-gray-200 hover:border-primary-300"
                   }`}
                 >
                   <button
                     onClick={() => setActiveIndex(isActive ? null : index)}
                     className="w-full flex items-center justify-between p-6 text-left"
                   >
-                    <span className="text-lg font-semibold text-white">{faq.question}</span>
+                    <span className="text-lg font-semibold text-gray-900">{faq.question}</span>
                     <ChevronDown
-                      className={`w-5 h-5 text-gray-400 transition-transform ${
-                        isActive ? "rotate-180" : ""
+                      className={`w-5 h-5 transition-transform ${
+                        isActive ? "rotate-180 text-primary-600" : "text-gray-400"
                       }`}
                     />
                   </button>
@@ -85,13 +81,13 @@ export function FAQ() {
                         exit={{ height: 0, opacity: 0 }}
                         className="overflow-hidden"
                       >
-                        <div className="p-6 pt-0 text-gray-300 leading-relaxed border-t border-white/5">
+                        <div className="p-6 pt-0 text-gray-600 leading-relaxed border-t border-gray-100 mt-2">
                           {faq.answer}
                         </div>
                       </motion.div>
                     )}
                   </AnimatePresence>
-                </motion.div>
+                </div>
               );
             })}
           </div>
@@ -104,7 +100,7 @@ export function FAQ() {
           >
             <Link
               href="#"
-              className="inline-flex items-center justify-center h-12 px-8 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 text-sm font-semibold text-white transition-all"
+              className="inline-flex items-center justify-center h-12 px-8 rounded-full bg-white border border-gray-200 shadow-sm hover:border-primary-400 hover:shadow-md text-sm font-bold text-primary-600 transition-all"
             >
               Lihat Dokumen FAQ Lengkap
             </Link>
