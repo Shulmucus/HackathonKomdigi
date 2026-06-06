@@ -39,3 +39,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# ai and notes
+CLAUDE.md
+.Claude.md
+AGENTS.md
+Konten Website Hackathon.docx
+docx_content.txt
+content_clean.md
+svg_colors.txt
+extract_svg_info.mjs
