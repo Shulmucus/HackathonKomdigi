@@ -14,22 +14,14 @@ export function Header() {
       <div className="container mx-auto px-4 md:px-6 h-20 flex items-center justify-between">
         {/* Left: Logo */}
         <div className="flex-1 flex items-center">
-          <Link href="/" className="flex items-center gap-4 group">
+          <Link href="/" className="flex items-center group">
             <Image 
-              src="/djed-logo.svg" 
+              src="/djed-komdigi-logo.svg" 
               alt="DJED Komdigi Logo" 
               width={200} 
               height={60}
-              className="h-8 md:h-10 w-auto object-contain"
+              className="h-6 sm:h-8 md:h-10 w-auto object-contain"
             />
-            <div className="hidden lg:flex flex-col border-l border-white/20 pl-4">
-              <span className="text-[10px] font-semibold text-gray-400 uppercase tracking-widest leading-tight">
-                Kementerian Komunikasi
-              </span>
-              <span className="text-[11px] font-bold text-white uppercase tracking-widest leading-tight">
-                dan Digital
-              </span>
-            </div>
           </Link>
         </div>
 

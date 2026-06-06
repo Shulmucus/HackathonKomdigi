@@ -20,7 +20,7 @@ export function Hero() {
           src="/Spread.svg" 
           alt="Background Spread Decoration" 
           fill
-          className="object-cover object-center"
+          className="object-contain md:object-cover object-center scale-[2] sm:scale-150 md:scale-100"
         />
       </div>
 
