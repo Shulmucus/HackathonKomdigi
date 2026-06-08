@@ -58,12 +58,12 @@ export function StrategicAlignment() {
           subitems: [
             "Kesehatan Industri Telekomunikasi",
             "Kesehatan Industri Pos, Logistik & Penyiaran",
+            "Kebijakan Perangkat Digital Aman",
           ],
         },
         {
-          title: "Kebijakan Perangkat Digital Aman",
+          title: "Akelesersi transformasi digital daerah",
           subitems: [
-            "Akelesersi transformasi digital daerah",
             "Asesmen Kesiapan Digital Daerah",
           ],
         },
@@ -72,12 +72,8 @@ export function StrategicAlignment() {
           subitems: [
             "AI Driven Talent Matching Platform",
             "Predictive analytics dashboard for national digital talent mapping",
-          ],
-        },
-        {
-          title: "Learning & Career Path Planner",
-          subitems: [
-            "Rekomendasi akselerasi pengembangan masyarakat digital produktif",
+            "Learning & Career Path Planner",
+            "Rekomendasi akselerasi pengembangan masyarakat digital produktif"
           ],
         },
       ],
