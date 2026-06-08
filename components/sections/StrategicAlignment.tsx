@@ -1,9 +1,20 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import { useState } from "react";
+import { ChevronDown } from "lucide-react";
 import Image from "next/image";
 
 export function StrategicAlignment() {
+  const [openItems, setOpenItems] = useState<Record<string, boolean>>({});
+
+  const toggleItem = (key: string) => {
+    setOpenItems((current) => ({
+      ...current,
+      [key]: !current[key],
+    }));
+  };
+
   const themes = [
     {
       icon: "/terhubung.svg",
@@ -136,26 +147,51 @@ export function StrategicAlignment() {
                 className="mb-6"
               />
               <h3 className="text-2xl font-bold text-gray-500 mb-6 tracking-wide">{theme.title}</h3>
-              <ul className="text-left space-y-5 inline-block px-4">
-                {theme.items.map((item, j) => (
-                  <li key={j} className="space-y-3">
-                    <div className="flex items-start gap-3">
-                      <div className="w-1.5 h-1.5 rounded-full bg-gray-900 mt-2.5 flex-shrink-0" />
-                      <span className="text-gray-900 text-[15px] font-semibold leading-relaxed">{item.title}</span>
+              <div className="text-left space-y-4 inline-block px-4 w-full">
+                {theme.items.map((item, j) => {
+                  const itemKey = `${i}-${j}`;
+                  const isOpen = openItems[itemKey];
+
+                  return (
+                    <div key={itemKey} className="rounded-3xl border border-gray-200 overflow-hidden bg-white shadow-sm">
+                      <button
+                        type="button"
+                        onClick={() => toggleItem(itemKey)}
+                        className="w-full flex items-center justify-between gap-4 px-5 py-4 text-left hover:bg-gray-50 transition-colors"
+                      >
+                        <span className="text-gray-900 text-[15px] font-semibold leading-relaxed">
+                          {item.title}
+                        </span>
+                        <ChevronDown
+                          className={`w-5 h-5 transition-transform duration-200 ${isOpen ? "rotate-180 text-primary-600" : "text-gray-400"}`}
+                        />
+                      </button>
+
+                      <AnimatePresence initial={false}>
+                        {isOpen && item.subitems && item.subitems.length > 0 && (
+                          <motion.div
+                            initial={{ height: 0, opacity: 0 }}
+                            animate={{ height: "auto", opacity: 1 }}
+                            exit={{ height: 0, opacity: 0 }}
+                            className="overflow-hidden"
+                          >
+                            <div className="px-5 pb-4 pt-2 bg-gray-50">
+                              <ul className="space-y-2">
+                                {item.subitems.map((subitem, k) => (
+                                  <li key={k} className="flex items-start gap-3">
+                                    <div className="w-1.5 h-1.5 rounded-full bg-primary-500 mt-2 flex-shrink-0" />
+                                    <span className="text-gray-700 text-sm leading-relaxed">{subitem}</span>
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
                     </div>
-                    {item.subitems && item.subitems.length > 0 && (
-                      <ul className="space-y-2 ml-8">
-                        {item.subitems.map((subitem, k) => (
-                          <li key={k} className="flex items-start gap-3">
-                            <div className="w-1.5 h-1.5 rounded-full bg-gray-400 mt-2.5 flex-shrink-0" />
-                            <span className="text-gray-700 text-sm leading-relaxed">{subitem}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </li>
-                ))}
-              </ul>
+                  );
+                })}
+              </div>
             </motion.div>
           ))}
         </div>
