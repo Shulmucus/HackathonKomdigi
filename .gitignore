@@ -49,3 +49,7 @@ docx_content.txt
 content_clean.md
 svg_colors.txt
 extract_svg_info.mjs
+
+# npm and package manager caches
+/.npm
+/.npm/_cacache

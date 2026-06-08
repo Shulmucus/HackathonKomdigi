@@ -9,30 +9,94 @@ export function StrategicAlignment() {
       icon: <Globe className="w-16 h-16 text-gray-400 mb-6" strokeWidth={1.5} />,
       title: "TERHUBUNG",
       items: [
-        "Optimalisasi Jaringan",
-        "Akselerasi penyediaan infrastruktur dan sumber daya untuk layanan khusus dan penyiaran",
-        "Keterpaduan infrastruktur dan aplikasi pemerintah digital"
-      ]
+        {
+          title: "Optimalisasi Jaringan Telekomunikasi",
+          subitems: [
+            "Pemetaan QoS dan Cakupan Jaringan Nasional",
+            "Optimalisasi Spektrum Frekuensi Radio",
+          ],
+        },
+        {
+          title: "Akselerasi penyediaan infrastruktur dan sumber daya untuk layanan khusus dan penyiaran",
+          subitems: [
+            "Optimalisasi penyediaan infrastruktur layanan khusus dan penyiaran",
+          ],
+        },
+        {
+          title: "Keterpaduan infrastruktur dan aplikasi pemerintah digital",
+          subitems: [
+            "Analitik SPBE",
+            "Analitik aplikasi",
+          ],
+        },
+      ],
     },
     {
       icon: <TrendingUp className="w-16 h-16 text-gray-400 mb-6" strokeWidth={1.5} />,
       title: "TUMBUH",
       items: [
-        "Peningkatan Ekosistem Digital",
-        "Pertumbuhan Industri",
-        "Akselerasi transformasi digital daerah",
-        "Akselerasi pengembangan dan literasi SDM"
-      ]
+        {
+          title: "Peningkatan Ekosistem Digital",
+          subitems: [
+            "Evaluasi IGRS",
+            "Pemetaan lokasi prioritas pemanfaatan teknologi baru",
+          ],
+        },
+        {
+          title: "Pertumbuhan Industri",
+          subitems: [
+            "Kesehatan Industri Telekomunikasi",
+            "Kesehatan Industri Pos, Logistik & Penyiaran",
+          ],
+        },
+        {
+          title: "Kebijakan Perangkat Digital Aman",
+          subitems: [
+            "Skelesersi transformasi digital daerah",
+            "Asesmen Kesiapan Digital Daerah",
+          ],
+        },
+        {
+          title: "Akselerasi pengembangan dan literasi SDM",
+          subitems: [
+            "AI Driven Talent Matching Platform",
+            "Predictive analytics dashboard for national digital talent mapping",
+          ],
+        },
+        {
+          title: "Learning & Career Path Planner",
+          subitems: [
+            "Rekomendasi akselerasi pengembangan masyarakat digital produktif",
+          ],
+        },
+      ],
     },
     {
       icon: <ShieldCheck className="w-16 h-16 text-gray-400 mb-6" strokeWidth={1.5} />,
       title: "TERJAGA",
       items: [
-        "Pengawasan ruang digital",
-        "Ruang digital terpercaya",
-        "Peningkatan komunikasi publik"
-      ]
-    }
+        {
+          title: "Pengawasan ruang digital",
+          subitems: [
+            "Deteksi Konten Negatif",
+            "Prioritas Aduan konten negatif",
+          ],
+        },
+        {
+          title: "Ruang digital terpercaya",
+          subitems: [
+            "Verifikasi Kepatuhan Profil Risiko PSE",
+          ],
+        },
+        {
+          title: "Peningkatan komunikasi publik",
+          subitems: [
+            "Analisis Sentimen Publik secara Real-Time",
+            "Produksi & Diseminasi Konten Berbasis KA",
+          ],
+        },
+      ],
+    },
   ];
 
   return (
@@ -66,11 +130,23 @@ export function StrategicAlignment() {
             >
               {theme.icon}
               <h3 className="text-2xl font-bold text-gray-500 mb-6 tracking-wide">{theme.title}</h3>
-              <ul className="text-left space-y-4 inline-block px-4">
+              <ul className="text-left space-y-5 inline-block px-4">
                 {theme.items.map((item, j) => (
-                  <li key={j} className="flex items-start gap-3">
-                    <div className="w-1.5 h-1.5 rounded-full bg-gray-900 mt-2.5 flex-shrink-0" />
-                    <span className="text-gray-900 text-[15px] font-semibold leading-relaxed">{item}</span>
+                  <li key={j} className="space-y-3">
+                    <div className="flex items-start gap-3">
+                      <div className="w-1.5 h-1.5 rounded-full bg-gray-900 mt-2.5 flex-shrink-0" />
+                      <span className="text-gray-900 text-[15px] font-semibold leading-relaxed">{item.title}</span>
+                    </div>
+                    {item.subitems && item.subitems.length > 0 && (
+                      <ul className="space-y-2 ml-8">
+                        {item.subitems.map((subitem, k) => (
+                          <li key={k} className="flex items-start gap-3">
+                            <div className="w-1.5 h-1.5 rounded-full bg-gray-400 mt-2.5 flex-shrink-0" />
+                            <span className="text-gray-700 text-sm leading-relaxed">{subitem}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
                   </li>
                 ))}
               </ul>
