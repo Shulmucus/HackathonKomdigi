@@ -198,7 +198,7 @@ export function StrategicAlignment() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="mt-12 mx-auto max-w-2xl bg-gray-500/10 rounded-3xl px-10 py-8 text-center"
+          className="mt-12 mx-auto max-w-full bg-gray-500/10 rounded-3xl px-10 py-8 text-center"
         >
           <h3 className="text-lg font-extrabold text-gray-900 mb-3 tracking-wide">
             DUKUNGAN MANAJEMEN
