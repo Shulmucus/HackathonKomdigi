@@ -1,12 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Globe, TrendingUp, ShieldCheck } from "lucide-react";
+import Image from "next/image";
 
 export function StrategicAlignment() {
   const themes = [
     {
-      icon: <Globe className="w-16 h-16 text-gray-400 mb-6" strokeWidth={1.5} />,
+      icon: "/terhubung.svg",
       title: "TERHUBUNG",
       items: [
         {
@@ -32,7 +32,7 @@ export function StrategicAlignment() {
       ],
     },
     {
-      icon: <TrendingUp className="w-16 h-16 text-gray-400 mb-6" strokeWidth={1.5} />,
+      icon: "/Tumbuh.svg",
       title: "TUMBUH",
       items: [
         {
@@ -72,7 +72,7 @@ export function StrategicAlignment() {
       ],
     },
     {
-      icon: <ShieldCheck className="w-16 h-16 text-gray-400 mb-6" strokeWidth={1.5} />,
+      icon: "/terjaga.svg",
       title: "TERJAGA",
       items: [
         {
@@ -128,7 +128,13 @@ export function StrategicAlignment() {
               transition={{ duration: 0.6, delay: i * 0.1 }}
               className="flex flex-col items-center"
             >
-              {theme.icon}
+              <Image 
+                src={theme.icon}
+                alt={theme.title}
+                width={64}
+                height={64}
+                className="mb-6"
+              />
               <h3 className="text-2xl font-bold text-gray-500 mb-6 tracking-wide">{theme.title}</h3>
               <ul className="text-left space-y-5 inline-block px-4">
                 {theme.items.map((item, j) => (
