@@ -52,7 +52,7 @@ export function StrategicAlignment() {
         {
           title: "Kebijakan Perangkat Digital Aman",
           subitems: [
-            "Skelesersi transformasi digital daerah",
+            "Akelesersi transformasi digital daerah",
             "Asesmen Kesiapan Digital Daerah",
           ],
         },
