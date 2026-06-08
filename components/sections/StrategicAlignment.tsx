@@ -203,7 +203,7 @@ export function StrategicAlignment() {
           <h3 className="text-lg font-extrabold text-gray-900 mb-3 tracking-wide">
             DUKUNGAN MANAJEMEN
           </h3>
-          <p className="text-gray-700 text-[15px] leading-relaxed">
+          <p className="text-gray-700 text-[15px] md:text-xl leading-relaxed">
             Evaluasi perencanaan, penganggaran dan dampak program; Analitik manajemen talenta pegawai; Audit dan Kepatuhan; Pelayanan Perizinan dan Pengaduan; Verifikasi, Pencocokan dan Penelitian PNBP
           </p>
         </motion.div>
