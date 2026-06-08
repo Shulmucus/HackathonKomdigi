@@ -191,6 +191,22 @@ export function StrategicAlignment() {
             </motion.div>
           ))}
         </div>
+
+        {/* Dukungan Manajemen */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="mt-12 mx-auto max-w-2xl bg-gray-500/10 rounded-3xl px-10 py-8 text-center"
+        >
+          <h3 className="text-lg font-extrabold text-gray-900 mb-3 tracking-wide">
+            DUKUNGAN MANAJEMEN
+          </h3>
+          <p className="text-gray-700 text-[15px] leading-relaxed">
+            Evaluasi perencanaan, penganggaran dan dampak program; Analitik manajemen talenta pegawai; Audit dan Kepatuhan; Pelayanan Perizinan dan Pengaduan; Verifikasi, Pencocokan dan Penelitian PNBP
+          </p>
+        </motion.div>
       </div>
     </section>
   );
