@@ -1,24 +1,22 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Trophy, Gift, Award, Medal, BookOpen, GraduationCap } from "lucide-react";
+import { Trophy, Medal, BookOpen, GraduationCap } from "lucide-react";
 import Image from "next/image";
 
 export function Benefits() {
   const winnerBenefits = [
     { icon: <Medal className="w-8 h-8 text-yellow-400" />, title: "Total Hadiah", desc: "Uang pembinaan senilai total Rp 30 Juta" },
-    { icon: <Award className="w-8 h-8 text-yellow-400" />, title: "Sertifikat Pemenang", desc: "Pengakuan resmi sebagai pemenang Hackathon" },
     { icon: <Trophy className="w-8 h-8 text-yellow-400" />, title: "Piagam Penghargaan", desc: "Dari Menteri Komunikasi dan Digital" },
   ];
 
   const participantBenefits = [
     { icon: <BookOpen className="w-6 h-6 text-primary-400" />, title: "Training", desc: "Pelatihan AI terstruktur (Beginner to Advanced)" },
-    { icon: <GraduationCap className="w-6 h-6 text-primary-400" />, title: "Sertifikasi", desc: "Sertifikasi keahlian di bidang kecerdasan buatan" },
-    { icon: <Gift className="w-6 h-6 text-primary-400" />, title: "Inkubasi", desc: "Pengembangan Inovasi lebih lanjut" },
+    { icon: <GraduationCap className="w-6 h-6 text-primary-400" />, title: "Sertifikat", desc: "Sertifikasi keahlian di bidang kecerdasan buatan" },
   ];
 
   return (
-    <section id="benefits" className="py-16 lg:py-24 relative overflow-hidden bg-white">
+    <section id="benefits" className="py-16 lg:py-24 relative overflow-hidden bg-primary-700">
       {/* Geometric Decorations */}
       <div className="absolute -top-20 -left-20 w-[500px] h-[500px] border-[40px] border-accent-gold/5 rounded-full pointer-events-none" />
       <div className="absolute bottom-10 -right-20 w-80 h-80 border-[24px] border-primary-400/5 rotate-12 pointer-events-none" />
@@ -40,7 +38,7 @@ export function Benefits() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-5xl font-bold text-gray-900 mb-4"
+            className="text-3xl md:text-5xl font-bold text-white mb-4"
           >
             Benefit Peserta
           </motion.h2>
@@ -49,7 +47,7 @@ export function Benefits() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-gray-600 max-w-2xl mx-auto"
+            className="text-white/80 max-w-2xl mx-auto"
           >
             Berbagai keuntungan yang bisa Anda dapatkan dengan mengikuti Hackathon Internal Komdigi 2026.
           </motion.p>

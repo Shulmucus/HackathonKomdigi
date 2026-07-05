@@ -28,7 +28,7 @@ export function FAQ() {
   const [activeIndex, setActiveIndex] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="py-16 lg:py-24 relative bg-gray-50 overflow-hidden">
+    <section id="faq" className="py-16 lg:py-24 relative bg-white overflow-hidden">
       {/* Geometric Decorations */}
       <div className="absolute top-40 -right-20 w-[400px] h-[400px] border-[30px] border-accent-red/5 rounded-full pointer-events-none" />
       <div className="absolute bottom-10 -left-10 w-64 h-64 border-[16px] border-primary-500/5 rotate-45 pointer-events-none" />

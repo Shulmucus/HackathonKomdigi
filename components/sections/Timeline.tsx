@@ -47,10 +47,10 @@ export function Timeline() {
   const lineHeight = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
   return (
-    <section id="timeline" className="py-24 relative bg-gray-50 overflow-hidden">
+    <section id="timeline" className="py-24 relative bg-primary-700 overflow-hidden">
       {/* Geometric Decorations */}
       <div className="absolute top-1/4 -left-32 w-[600px] h-[600px] border-[40px] border-accent-gold/5 rounded-full pointer-events-none" />
-      <div className="absolute bottom-1/4 -right-10 w-80 h-80 border-[20px] border-primary-500/5 rotate-45 pointer-events-none" />
+      <div className="absolute bottom-1/4 -right-10 w-80 h-80 border-[20px] border-white/5 rotate-45 pointer-events-none" />
       <div className="absolute top-10 right-20 w-40 h-40 bg-accent-red/5 rounded-full blur-2xl pointer-events-none" />
 
       <div className="container mx-auto px-4 md:px-6 relative z-10" ref={containerRef}>
@@ -59,7 +59,7 @@ export function Timeline() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-6 tracking-tight"
+            className="text-3xl md:text-5xl font-extrabold text-white mb-6 tracking-tight"
           >
               Linimasa Komdigi 2026
             </motion.h2>
@@ -68,7 +68,7 @@ export function Timeline() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-gray-600 text-lg max-w-2xl mx-auto"
+              className="text-white/80 text-lg max-w-2xl mx-auto"
             >
               Jangan sampai lewatkan momen penting dalam perjalanan inovasi — dari pendaftaran hingga puncak acara.
             </motion.p>
@@ -93,7 +93,7 @@ export function Timeline() {
                     initial={{ scale: 0 }}
                     animate={{ scale: 1 }}
                     transition={{ type: "spring", stiffness: 300, damping: 20, delay: 0.2 }}
-                    className="absolute left-[-3.5px] top-1/2 -translate-y-1/2 md:left-1/2 md:-translate-x-1/2 md:top-1/2 md:-translate-y-1/2 w-6 h-6 bg-accent-gold rounded-full border-4 border-white shadow-md z-10" 
+                    className="absolute left-[-3.5px] top-1/2 -translate-y-1/2 md:left-1/2 md:-translate-x-1/2 md:top-1/2 md:-translate-y-1/2 w-6 h-6 bg-accent-gold rounded-full border-4 border-primary-700 shadow-md z-10" 
                   />
 
                   {/* Card content */}

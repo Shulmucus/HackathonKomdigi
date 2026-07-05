@@ -7,12 +7,12 @@ import { ChevronRight, Download } from "lucide-react";
 
 export function Hero() {
   return (
-    <section id="about" className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-primary-700">
+    <section id="about" className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-white">
       {/* Authentic tech pattern background */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-30" />
       
       {/* Subtle top glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-96 bg-primary-600/10 blur-[100px] pointer-events-none" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-96 bg-primary-500/10 blur-[100px] pointer-events-none" />
 
       {/* Background Graphic */}
       <div className="absolute inset-0 pointer-events-none flex justify-center items-center opacity-40 z-0">
@@ -33,7 +33,7 @@ export function Hero() {
           className="flex justify-center mb-6"
         >
           <Image 
-            src="/hackathon-logo-vertikal.png" 
+            src="/HACKATHON WARNA GRAY TEXT VERTIKAL.png" 
             alt="Hackathon Komdigi 2026 Logo" 
             width={240} 
             height={320}
@@ -54,7 +54,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          className="mt-6 text-lg md:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed"
+          className="mt-6 text-lg md:text-xl text-primary-700/80 max-w-3xl mx-auto leading-relaxed"
         >
           Seluruh solusi dan inovasi yang tercipta dari Hackathon Internal KOMDIGI diharapkan dapat diimplementasikan secara nyata melalui sebuah Dashboard Decision Support yang mengintegrasikan berbagai use case berbasis AI.
           <br className="hidden md:block mt-2" />
@@ -77,7 +77,7 @@ export function Hero() {
           <a
             href="/Hackathon%20Internal%20KOMDIGI%202026%20Booklet%20Cover.pdf"
             download
-            className="w-full sm:w-auto flex items-center justify-center h-12 px-8 rounded-lg bg-white/5 hover:bg-white/10 border border-white/20 text-base font-semibold text-white transition-colors group"
+            className="w-full sm:w-auto flex items-center justify-center h-12 px-8 rounded-lg bg-white/5 hover:bg-primary-50 border border-primary-200 text-base font-semibold text-primary-700 transition-colors group"
           >
             <Download className="w-4 h-4 mr-2" />
             Download Booklet
