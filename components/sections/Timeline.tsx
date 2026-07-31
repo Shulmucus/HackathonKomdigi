@@ -79,7 +79,7 @@ const timelineEvents = [
   { 
     title: "Inkubasi", 
     date: "Nov 2026 - Des 2027", 
-    tag: "Pengembangan",
+    tag: "Event Berakhir",
     desc: "Tahap pasca event untuk inkubasi inovasi." 
   }
 ];
