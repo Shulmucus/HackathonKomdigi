@@ -5,7 +5,7 @@ import { CheckCircle2 } from "lucide-react";
 
 const requirements = [
   "Peserta adalah Aparatur Sipil Negara (ASN) aktif di lingkungan Kementerian Komunikasi dan Digital.",
-  "Pendaftaran dilakukan secara individu atau tim dengan komposisi 3 hingga 5 anggota.",
+  "Pendaftaran dilakukan secara individu atau tim dengan komposisi 3-4 anggota.",
   "Telah memiliki ide pengembangan use case kecerdasan artifisial sesuai dengan tema yang diberikan.",
   "Tim dapat terdiri atas lintas satuan kerja (unit) untuk mendorong kolaborasi.",
   "Setiap tim diwajibkan memiliki minimal 1 (satu) pegawai yang berasal dari Satuan Kerja yang akan menjadi pemilik masalah (Problem Owner).",

@@ -4,36 +4,84 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 const timelineEvents = [
-  {
-    title: "Pendaftaran & Publikasi",
-    date: "15 Juni - 3 Juli",
+  { 
+    title: "Publikasi & Pendaftaran", 
+    date: "10 Agustus - 3 September", 
     tag: "Mulai Bersinar",
-    desc: "Daftar sekarang dan sebarkan berita bahwa era AI di pemerintahan resmi dimulai. Ini saatnya semua unit bergerak bersama.",
+    desc: "Publikasi melalui microsite, Portal Komdigi dan pemberitahuan kepada Satuan Kerja melalui Nota Dinas tentang pembukaan kegiatan Hackathon" 
   },
-  {
-    title: "Kick Off Hackathon",
-    date: "14 Juli",
+  { 
+    title: "Kick Off Sosialisasi & Webinar", 
+    date: "24 Agustus", 
     tag: "Energi Awal",
-    desc: "Buka acara dengan inspirasi, tantangan nyata, dan semangat kolaborasi untuk menciptakan solusi yang berdampak.",
+    desc: "Membangun Mindset Kecerdasan Artifisial, Integrasi Teknologi dalam Budaya Kerja" 
   },
-  {
-    title: "Rangkaian Pelatihan AI",
-    date: "28 Juli - 11 Agustus",
+  { 
+    title: "Penutupan Pendaftaran & Penyusunan Tim", 
+    date: "3 September", 
+    tag: "Persiapan Tim",
+    desc: "Penyusunan tim peserta pelatihan Hackathon termasuk pembentukan tim bagi pendaftar individu (pembagian kelas AWS dan Alibaba)" 
+  },
+  { 
+    title: "Pelatihan Manajerial", 
+    date: "9 September", 
     tag: "Kuasai AI",
-    desc: "Ikuti sesi praktis dari pemula ke mahir dengan studi kasus pemerintahan yang langsung dapat diterapkan.",
+    desc: "1. Perkembangan kecerdasan artifisial, 2. Fungsi AI di komputasi awan, 3. Metode identifikasi kebutuhan unit kerja" 
   },
-  {
-    title: "Batas Akhir Pengumpulan Proposal",
-    date: "21 Agustus",
+  { 
+    title: "Pelatihan AI Beginner", 
+    date: "10 September", 
+    tag: "Kuasai AI",
+    desc: "1. Prompt Engineering dan Praktek, 2. Semantic Search dan Praktek" 
+  },
+  { 
+    title: "Pelatihan AI Intermediate", 
+    date: "17 September", 
+    tag: "Kuasai AI",
+    desc: "1. Best Practice Orkestrasi AI dan Prakteknya, 2. Analisis data dan Prakteknya serta Pengenalan Machine learning dan Praktek" 
+  },
+  { 
+    title: "Pelatihan AI Advanced", 
+    date: "24 September", 
+    tag: "Kuasai AI",
+    desc: "1. Specification-Driven development (AI Asisted Coding), 2. AI Agent Governance Platform, 3. AI-Driven Development with data-as-aservice Framework" 
+  },
+  { 
+    title: "Batas Akhir Finalisasi Proposal", 
+    date: "1 Oktober", 
     tag: "Ajukan Ide Anda",
-    desc: "Kirim proposal inovatif berbasis AI Anda — kesempatan untuk mempengaruhi transformasi digital Komdigi.",
+    desc: "Batas akhir finalisasi proposal ide inovasi dari para peserta."
   },
-  {
-    title: "Main Hackathon & Pengumuman Pemenang",
-    date: "21 - 22 September",
+  { 
+    title: "Pengumuman Top 6 Proposal", 
+    date: "1 Oktober", 
+    tag: "Tahap Seleksi",
+    desc: "Seleksi dan Pengumuman Top 6 proposal untuk peserta main event hackathon (3 tim nominasi AWS, 3 tim nominasi Alibaba)" 
+  },
+  { 
+    title: "Finalist Briefing", 
+    date: "5 Oktober", 
+    tag: "Persiapan Final",
+    desc: "Pengarahan teknis, aturan main, kriteria penilaian, dan pembagian jadwal mentoring untuk para finalis sebelum kompetisi dimulai." 
+  },
+  { 
+    title: "Mentoring 1 On 1", 
+    date: "5 - 16 Oktober", 
+    tag: "Konsultasi",
+    desc: "Sesi konsultasi mendalam pematangan produk, arsitektur AI, dan persiapan presentasi finalis bersama mentor" 
+  },
+  { 
+    title: "Main Hackathon", 
+    date: "19 - 20 Oktober", 
     tag: "Puncak Kolaborasi",
-    desc: "Buat prototipe, presentasikan solusi, dan rayakan tim yang berhasil membawa perubahan nyata.",
+    desc: "Hari 1: Ideasi dan Pengembangan & Hari 2: Pembuatan Prototipe dan Presentasi (19-20 Oktober 2026)" 
   },
+  { 
+    title: "Inkubasi", 
+    date: "Nov 2026 - Des 2027", 
+    tag: "Pengembangan",
+    desc: "Tahap pasca event untuk inkubasi inovasi." 
+  }
 ];
 
 export function Timeline() {
@@ -113,14 +161,16 @@ export function Timeline() {
                       <div className="absolute inset-0 bg-gradient-to-br from-accent-gold/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                       
                       <div className="relative z-10">
-                        <div className="inline-flex items-center gap-2 mb-3 text-sm font-semibold text-primary-700">
-                          <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-primary-100 text-primary-700">
-                            ★
-                          </span>
-                          <span>{event.tag}</span>
-                        </div>
-                        <div className="inline-block px-4 py-1.5 rounded-full bg-primary-50 text-primary-700 font-bold text-sm mb-4 border border-primary-100">
-                          {event.date}
+                        <div className="flex flex-wrap items-center gap-3 mb-4">
+                          <div className="inline-flex items-center gap-2 text-sm font-semibold text-primary-700">
+                            <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-primary-100 text-primary-700">
+                              ★
+                            </span>
+                            <span>{event.tag}</span>
+                          </div>
+                          <div className="inline-block px-4 py-1.5 rounded-full bg-primary-50 text-primary-700 font-bold text-sm border border-primary-100">
+                            {event.date}
+                          </div>
                         </div>
                         <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary-700 transition-colors">{event.title}</h3>
                         <p className="text-gray-600 leading-relaxed">
