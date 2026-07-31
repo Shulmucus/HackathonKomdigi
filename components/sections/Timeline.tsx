@@ -8,7 +8,7 @@ const timelineEvents = [
     title: "Publikasi & Pendaftaran", 
     date: "10 Agustus - 3 September", 
     tag: "Mulai Bersinar",
-    desc: "Publikasi melalui microsite, Portal Komdigi dan pemberitahuan kepada Satuan Kerja melalui Nota Dinas tentang pembukaan kegiatan Hackathon" 
+    desc: "" 
   },
   { 
     title: "Kick Off Sosialisasi & Webinar", 
@@ -20,7 +20,7 @@ const timelineEvents = [
     title: "Penutupan Pendaftaran & Penyusunan Tim", 
     date: "3 September", 
     tag: "Persiapan Tim",
-    desc: "Penyusunan tim peserta pelatihan Hackathon termasuk pembentukan tim bagi pendaftar individu (pembagian kelas AWS dan Alibaba)" 
+    desc: "Penyusunan tim peserta pelatihan Hackathon termasuk pembentukan tim bagi pendaftar individu" 
   },
   { 
     title: "Pelatihan Manajerial", 
@@ -56,7 +56,7 @@ const timelineEvents = [
     title: "Pengumuman Top 6 Proposal", 
     date: "1 Oktober", 
     tag: "Tahap Seleksi",
-    desc: "Seleksi dan Pengumuman Top 6 proposal untuk peserta main event hackathon (3 tim nominasi AWS, 3 tim nominasi Alibaba)" 
+    desc: "Seleksi dan Pengumuman Top 6 proposal untuk peserta main event hackathon" 
   },
   { 
     title: "Finalist Briefing", 
