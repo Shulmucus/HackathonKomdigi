@@ -10,7 +10,7 @@ export function Footer() {
           <div className="col-span-1 md:col-span-2">
             <Link href="/" className="inline-block mb-6">
               <Image 
-                src="/HACKATHON PUTIH HORIZONTAL.png" 
+                src="/logoiconsampingputih.png" 
                 alt="Hackathon Komdigi 2026 Logo" 
                 width={300} 
                 height={80}

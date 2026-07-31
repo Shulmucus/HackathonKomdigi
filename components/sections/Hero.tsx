@@ -33,7 +33,7 @@ export function Hero() {
           className="flex justify-center mb-6"
         >
           <Image 
-            src="/HACKATHON WARNA GRAY TEXT VERTIKAL.png" 
+            src="/logoicontengahberwarna).png" 
             alt="Hackathon Komdigi 2026 Logo" 
             width={240} 
             height={320}
