@@ -1,31 +1,9 @@
 "use client";
 
-import { motion, AnimatePresence } from "framer-motion";
-import { useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { motion } from "framer-motion";
 import Link from "next/link";
 
-const faqs = [
-  {
-    question: "Siapa saja yang dapat mendaftar Hackathon ini?",
-    answer: "Peserta adalah Aparatur Sipil Negara (ASN) aktif yang berada di lingkungan Kementerian Komunikasi dan Digital.",
-  },
-  {
-    question: "Berapa jumlah anggota dalam satu tim?",
-    answer: "Pendaftaran dapat dilakukan secara individu atau membentuk tim dengan komposisi 3 hingga 5 anggota.",
-  },
-  {
-    question: "Apakah anggota tim boleh dari satuan kerja yang berbeda?",
-    answer: "Ya, sangat diperbolehkan. Tim dapat terdiri atas lintas satuan kerja (unit) untuk mendorong kolaborasi yang lebih luas.",
-  },
-  {
-    question: "Apakah wajib memiliki persetujuan pimpinan?",
-    answer: "Ya, semua anggota tim wajib mendapatkan persetujuan resmi dari pimpinan satuan kerja masing-masing.",
-  },
-];
-
 export function FAQ() {
-  const [activeIndex, setActiveIndex] = useState<number | null>(0);
 
   return (
     <section id="faq" className="py-16 lg:py-24 relative bg-white overflow-hidden">
@@ -56,45 +34,7 @@ export function FAQ() {
             </motion.p>
           </div>
 
-          <div className="space-y-4 mb-10">
-            {faqs.map((faq, index) => {
-              const isActive = activeIndex === index;
-
-              return (
-                  <div
-                  key={index}
-                  className={`bg-white rounded-2xl border shadow-sm transition-all ${
-                    isActive ? "border-primary-400 shadow-md ring-1 ring-primary-400" : "border-gray-200 hover:border-primary-300"
-                  }`}
-                >
-                  <button
-                    onClick={() => setActiveIndex(isActive ? null : index)}
-                    className="w-full flex items-center justify-between p-6 text-left"
-                  >
-                    <span className="text-lg font-semibold text-gray-900">{faq.question}</span>
-                    <ChevronDown
-                      className={`w-5 h-5 transition-transform ${
-                        isActive ? "rotate-180 text-primary-600" : "text-gray-400"
-                      }`}
-                    />
-                  </button>
-                  <AnimatePresence>
-                    {isActive && (
-                      <motion.div
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: "auto", opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
-                        className="overflow-hidden"
-                      >
-                        <div className="p-6 pt-0 text-gray-600 leading-relaxed border-t border-gray-100 mt-2">
-                          {faq.answer}
-                        </div>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </div>
-              );
-            })}
+          <div className="space-y-4 mb-10 hidden">
           </div>
 
           <motion.div

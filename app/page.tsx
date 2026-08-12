@@ -6,6 +6,7 @@ import { Timeline } from "@/components/sections/Timeline";
 import { Requirements } from "@/components/sections/Requirements";
 import { Benefits } from "@/components/sections/Benefits";
 import { FAQ } from "@/components/sections/FAQ";
+import { Contact } from "@/components/sections/Contact";
 import { Ticker } from "@/components/sections/Ticker";
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
         <Requirements />
         <Benefits />
         <FAQ />
+        <Contact />
       </main>
       <Footer />
     </>

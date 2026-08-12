@@ -5,82 +5,76 @@ import { motion, useScroll, useTransform } from "framer-motion";
 
 const timelineEvents = [
   { 
-    title: "Publikasi & Pendaftaran", 
-    date: "10 Agustus - 3 September", 
+    title: "Sosialisasi dan Pendaftaran", 
+    date: "24 Agustus – 10 September", 
     tag: "Mulai Bersinar",
-    desc: "" 
+    desc: "Publikasi melalui microsite, Portal Komdigi dan pemberitahuan kepada Satuan Kerja melalui Nota Dinas tentang pembukaan kegiatan Hackathon" 
   },
   { 
-    title: "Kick Off Sosialisasi & Webinar", 
-    date: "24 Agustus", 
-    tag: "Energi Awal",
-    desc: "Membangun Mindset Kecerdasan Artifisial, Integrasi Teknologi dalam Budaya Kerja" 
-  },
-  { 
-    title: "Penutupan Pendaftaran & Penyusunan Tim", 
-    date: "3 September", 
+    title: "Penutupan Pendaftaran", 
+    date: "10 September", 
     tag: "Persiapan Tim",
     desc: "Penyusunan tim peserta pelatihan Hackathon termasuk pembentukan tim bagi pendaftar individu" 
   },
   { 
-    title: "Pelatihan Manajerial", 
-    date: "9 September", 
+    title: "Training Manajerial", 
+    date: "16 September", 
     tag: "Kuasai AI",
-    desc: "1. Perkembangan kecerdasan artifisial, 2. Fungsi AI di komputasi awan, 3. Metode identifikasi kebutuhan unit kerja" 
+    desc: "1. Perkembangan kecerdasan artifisial\n2. Fungsi AI di komputasi awan\n3. Metode identifikasi kebutuhan unit kerja" 
   },
   { 
-    title: "Pelatihan AI Beginner", 
-    date: "10 September", 
-    tag: "Kuasai AI",
-    desc: "1. Prompt Engineering dan Praktek, 2. Semantic Search dan Praktek" 
-  },
-  { 
-    title: "Pelatihan AI Intermediate", 
+    title: "Training AI Beginner", 
     date: "17 September", 
     tag: "Kuasai AI",
-    desc: "1. Best Practice Orkestrasi AI dan Prakteknya, 2. Analisis data dan Prakteknya serta Pengenalan Machine learning dan Praktek" 
+    desc: "1. Prompt Engineering dan Praktek\n2. Semantic Search dan Praktek" 
   },
   { 
-    title: "Pelatihan AI Advanced", 
+    title: "Training AI Intermediate", 
     date: "24 September", 
     tag: "Kuasai AI",
-    desc: "1. Specification-Driven development (AI Asisted Coding), 2. AI Agent Governance Platform, 3. AI-Driven Development with data-as-aservice Framework" 
+    desc: "1. Best Practice Orkestrasi AI dan Prakteknya\n2. Analisis data dan Prakteknya serta Pengenalan Machine learning dan Praktek" 
   },
   { 
-    title: "Batas Akhir Finalisasi Proposal", 
+    title: "Training AI Advanced", 
     date: "1 Oktober", 
+    tag: "Kuasai AI",
+    desc: "1. Specification-Driven development (AI Asisted Coding)\n2. AI Agent Governance Platform\n3. AI-Driven Development with data-as-aservice Framework" 
+  },
+  { 
+    title: "Batas akhir pengumpulan Proposal", 
+    date: "4 Oktober", 
     tag: "Ajukan Ide Anda",
     desc: "Batas akhir finalisasi proposal ide inovasi dari para peserta."
   },
   { 
-    title: "Pengumuman Top 6 Proposal", 
-    date: "1 Oktober", 
+    title: "Seleksi Top 6", 
+    date: "6 Oktober", 
     tag: "Tahap Seleksi",
-    desc: "Seleksi dan Pengumuman Top 6 proposal untuk peserta main event hackathon" 
+    desc: "Seleksi proposal terbaik untuk melaju ke tahap main event hackathon." 
+  },
+  { 
+    title: "Pengumuman Finalis", 
+    date: "7 Oktober", 
+    tag: "Tahap Seleksi",
+    desc: "Pengumuman Top 6 proposal untuk peserta main event hackathon (3 tim nominasi AWS, 3 tim nominasi Alibaba)." 
   },
   { 
     title: "Finalist Briefing", 
-    date: "5 Oktober", 
+    date: "9 Oktober", 
     tag: "Persiapan Final",
     desc: "Pengarahan teknis, aturan main, kriteria penilaian, dan pembagian jadwal mentoring untuk para finalis sebelum kompetisi dimulai." 
   },
   { 
-    title: "Mentoring 1 On 1", 
-    date: "5 - 16 Oktober", 
+    title: "Mentoring 1-on-1", 
+    date: "12–16 Oktober", 
     tag: "Konsultasi",
-    desc: "Sesi konsultasi mendalam pematangan produk, arsitektur AI, dan persiapan presentasi finalis bersama mentor" 
+    desc: "Sesi konsultasi mendalam pematangan produk, arsitektur AI, dan persiapan presentasi finalis bersama mentor." 
   },
   { 
     title: "Main Hackathon", 
-    date: "19 - 20 Oktober", 
+    date: "19–20 Oktober", 
     tag: "Puncak Kolaborasi",
-    desc: "Hari 1: Ideasi dan Pengembangan & Hari 2: Pembuatan Prototipe dan Presentasi (19-20 Oktober 2026)" 
-  },
-  { 
-    title: "Inkubasi", 
-    date: "Nov 2026 - Des 2027", 
-    tag: "Event Berakhir",
-    desc: "Tahap pasca event untuk inkubasi inovasi." 
+    desc: "Hari 1: Ideasi dan Pengembangan\nHari 2: Pembuatan Prototipe dan Presentasi." 
   }
 ];
 
@@ -173,7 +167,7 @@ export function Timeline() {
                           </div>
                         </div>
                         <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary-700 transition-colors">{event.title}</h3>
-                        <p className="text-gray-600 leading-relaxed">
+                        <p className="text-gray-600 leading-relaxed whitespace-pre-line">
                           {event.desc}
                         </p>
                       </div>
