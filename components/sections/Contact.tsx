@@ -42,7 +42,7 @@ export function Contact() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-primary-100 text-lg max-w-2xl mx-auto"
+            className="text-primary-100 text-lg max-w-2xl mx-auto text-justify"
           >
             Hubungi panitia Hackathon Internal Komdigi 2026 untuk pertanyaan lebih lanjut.
           </motion.p>
@@ -60,7 +60,7 @@ export function Contact() {
             >
               <h3 className="text-2xl font-bold text-white mb-2">{contact.name}</h3>
               <p className="text-primary-200 font-medium mb-1">{contact.role}</p>
-              <p className="text-gray-400 text-sm mb-8 max-w-[280px] leading-relaxed">{contact.department}</p>
+              <p className="text-gray-400 text-sm mb-8 max-w-[280px] leading-relaxed text-justify">{contact.department}</p>
               
               <div className="flex flex-col gap-3 w-full">
                 <a 

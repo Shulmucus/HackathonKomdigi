@@ -49,7 +49,7 @@ const timelineEvents = [
     date: "1 Oktober", 
     tag: "Kuasai AI",
     desc: [
-      "Specification-Driven development (AI Asisted Coding)",
+      "Specification-Driven Development (AI Asisted Coding)",
       "AI Agent Governance Platform",
       "AI-Driven Development with data-as-aservice Framework"
     ]
@@ -188,7 +188,7 @@ export function Timeline() {
                             ))}
                           </ol>
                         ) : (
-                          <p className="text-gray-600 leading-relaxed whitespace-pre-line">
+                          <p className="text-gray-600 leading-relaxed whitespace-pre-line text-justify">
                             {event.desc}
                           </p>
                         )}

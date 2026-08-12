@@ -47,7 +47,7 @@ export function Benefits() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-white/80 max-w-2xl mx-auto"
+            className="text-white/80 max-w-2xl mx-auto text-justify"
           >
             Berbagai keuntungan yang bisa Anda dapatkan dengan mengikuti Hackathon Internal Komdigi 2026.
           </motion.p>
@@ -78,7 +78,7 @@ export function Benefits() {
                   </div>
                   <div>
                     <h4 className="text-lg font-bold text-gray-900">{b.title}</h4>
-                    <p className="text-gray-700">{b.desc}</p>
+                    <p className="text-gray-700 text-justify">{b.desc}</p>
                   </div>
                 </div>
               ))}
@@ -105,7 +105,7 @@ export function Benefits() {
                   </div>
                   <div>
                     <h4 className="text-lg font-bold text-gray-900">{b.title}</h4>
-                    <p className="text-gray-700">{b.desc}</p>
+                    <p className="text-gray-700 text-justify">{b.desc}</p>
                   </div>
                 </div>
               ))}

@@ -35,7 +35,7 @@ export function Requirements() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-gray-600 max-w-2xl mx-auto"
+            className="text-gray-600 max-w-2xl mx-auto text-justify"
           >
             Pastikan Anda memenuhi persyaratan berikut sebelum mendaftar Hackathon Internal Komdigi 2026.
           </motion.p>
@@ -52,7 +52,7 @@ export function Requirements() {
               className="flex gap-4 p-6 bg-primary-50 backdrop-blur-md rounded-2xl border border-primary-100 hover:border-accent-gold/50 transition-all"
             >
               <CheckCircle2 className="w-6 h-6 text-accent-gold flex-shrink-0 mt-1" />
-              <p className="text-gray-700 leading-relaxed">{req}</p>
+              <p className="text-gray-700 leading-relaxed text-justify">{req}</p>
             </motion.div>
           ))}
         </div>

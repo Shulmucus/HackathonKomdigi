@@ -54,7 +54,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          className="mt-6 text-lg md:text-xl text-primary-700/80 max-w-3xl mx-auto leading-relaxed"
+          className="mt-6 text-lg md:text-xl text-primary-700/80 max-w-3xl mx-auto leading-relaxed text-justify"
         >
           Seluruh solusi dan inovasi yang tercipta dari Hackathon Internal KOMDIGI diharapkan dapat diimplementasikan secara nyata melalui sebuah Dashboard Decision Support yang mengintegrasikan berbagai use case berbasis AI.
           <br className="hidden md:block mt-2" />
