@@ -20,25 +20,39 @@ const timelineEvents = [
     title: "Training Manajerial", 
     date: "16 September", 
     tag: "Kuasai AI",
-    desc: "1. Perkembangan kecerdasan artifisial\n2. Fungsi AI di komputasi awan\n3. Metode identifikasi kebutuhan unit kerja" 
+    desc: [
+      "Perkembangan kecerdasan artifisial",
+      "Fungsi AI di komputasi awan",
+      "Metode identifikasi kebutuhan unit kerja"
+    ]
   },
   { 
     title: "Training AI Beginner", 
     date: "17 September", 
     tag: "Kuasai AI",
-    desc: "1. Prompt Engineering dan Praktek\n2. Semantic Search dan Praktek" 
+    desc: [
+      "Prompt Engineering dan Praktek",
+      "Semantic Search dan Praktek"
+    ]
   },
   { 
     title: "Training AI Intermediate", 
     date: "24 September", 
     tag: "Kuasai AI",
-    desc: "1. Best Practice Orkestrasi AI dan Prakteknya\n2. Analisis data dan Prakteknya serta Pengenalan Machine learning dan Praktek" 
+    desc: [
+      "Best Practice Orkestrasi AI dan Prakteknya",
+      "Analisis data dan Prakteknya serta Pengenalan Machine learning dan Praktek"
+    ]
   },
   { 
     title: "Training AI Advanced", 
     date: "1 Oktober", 
     tag: "Kuasai AI",
-    desc: "1. Specification-Driven development (AI Asisted Coding)\n2. AI Agent Governance Platform\n3. AI-Driven Development with data-as-aservice Framework" 
+    desc: [
+      "Specification-Driven development (AI Asisted Coding)",
+      "AI Agent Governance Platform",
+      "AI-Driven Development with data-as-aservice Framework"
+    ]
   },
   { 
     title: "Batas akhir pengumpulan Proposal", 
@@ -167,9 +181,17 @@ export function Timeline() {
                           </div>
                         </div>
                         <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary-700 transition-colors">{event.title}</h3>
-                        <p className="text-gray-600 leading-relaxed whitespace-pre-line">
-                          {event.desc}
-                        </p>
+                        {Array.isArray(event.desc) ? (
+                          <ol className="text-gray-600 leading-relaxed list-decimal pl-4 space-y-1 text-left">
+                            {event.desc.map((item, i) => (
+                              <li key={i} className="pl-1">{item}</li>
+                            ))}
+                          </ol>
+                        ) : (
+                          <p className="text-gray-600 leading-relaxed whitespace-pre-line">
+                            {event.desc}
+                          </p>
+                        )}
                       </div>
                     </div>
                   </motion.div>
