@@ -47,7 +47,7 @@ export function Benefits() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-white/80 max-w-2xl mx-auto text-justify"
+            className="text-white/80 max-w-2xl mx-auto"
           >
             Berbagai keuntungan yang bisa Anda dapatkan dengan mengikuti Hackathon Internal Komdigi 2026.
           </motion.p>

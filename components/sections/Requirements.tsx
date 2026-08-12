@@ -35,7 +35,7 @@ export function Requirements() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-gray-600 max-w-2xl mx-auto text-justify"
+            className="text-gray-600 max-w-2xl mx-auto"
           >
             Pastikan Anda memenuhi persyaratan berikut sebelum mendaftar Hackathon Internal Komdigi 2026.
           </motion.p>

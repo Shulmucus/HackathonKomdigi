@@ -188,7 +188,7 @@ export function Timeline() {
                             ))}
                           </ol>
                         ) : (
-                          <p className="text-gray-600 leading-relaxed whitespace-pre-line text-justify">
+                          <p className="text-gray-600 leading-relaxed whitespace-pre-line">
                             {event.desc}
                           </p>
                         )}
