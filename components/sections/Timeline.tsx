@@ -7,8 +7,8 @@ const timelineEvents = [
   { 
     title: "Sosialisasi dan Pendaftaran", 
     date: "24 Agustus – 10 September", 
-    tag: "Mulai Bersinar",
-    desc: "Publikasi melalui microsite, Portal Komdigi dan pemberitahuan kepada Satuan Kerja melalui Nota Dinas tentang pembukaan kegiatan Hackathon" 
+    tag: "",
+    desc: "" 
   },
   { 
     title: "Penutupan Pendaftaran", 
@@ -19,17 +19,13 @@ const timelineEvents = [
   { 
     title: "Training Manajerial", 
     date: "16 September", 
-    tag: "Kuasai AI",
-    desc: [
-      "Perkembangan kecerdasan artifisial",
-      "Fungsi AI di komputasi awan",
-      "Metode identifikasi kebutuhan unit kerja"
-    ]
+    tag: "",
+    desc: ""
   },
   { 
     title: "Training AI Beginner", 
     date: "17 September", 
-    tag: "Kuasai AI",
+    tag: "",
     desc: [
       "Prompt Engineering dan Praktek",
       "Semantic Search dan Praktek"
@@ -38,7 +34,7 @@ const timelineEvents = [
   { 
     title: "Training AI Intermediate", 
     date: "24 September", 
-    tag: "Kuasai AI",
+    tag: "",
     desc: [
       "Best Practice Orkestrasi AI dan Prakteknya",
       "Analisis data dan Prakteknya serta Pengenalan Machine learning dan Praktek"
@@ -47,7 +43,7 @@ const timelineEvents = [
   { 
     title: "Training AI Advanced", 
     date: "1 Oktober", 
-    tag: "Kuasai AI",
+    tag: "",
     desc: [
       "Specification-Driven Development (AI Asisted Coding)",
       "AI Agent Governance Platform",
@@ -57,37 +53,37 @@ const timelineEvents = [
   { 
     title: "Batas akhir pengumpulan Proposal", 
     date: "4 Oktober", 
-    tag: "Ajukan Ide Anda",
+    tag: "",
     desc: "Batas akhir finalisasi proposal ide inovasi dari para peserta."
   },
   { 
     title: "Seleksi Top 6", 
     date: "6 Oktober", 
-    tag: "Tahap Seleksi",
+    tag: "",
     desc: "Seleksi proposal terbaik untuk melaju ke tahap main event hackathon." 
   },
   { 
     title: "Pengumuman Finalis", 
     date: "7 Oktober", 
-    tag: "Tahap Seleksi",
-    desc: "Pengumuman Top 6 proposal untuk peserta main event hackathon (3 tim nominasi AWS, 3 tim nominasi Alibaba)." 
+    tag: "",
+    desc: "" 
   },
   { 
     title: "Finalist Briefing", 
     date: "9 Oktober", 
-    tag: "Persiapan Final",
+    tag: "",
     desc: "Pengarahan teknis, aturan main, kriteria penilaian, dan pembagian jadwal mentoring untuk para finalis sebelum kompetisi dimulai." 
   },
   { 
     title: "Mentoring 1-on-1", 
     date: "12–16 Oktober", 
-    tag: "Konsultasi",
+    tag: "",
     desc: "Sesi konsultasi mendalam pematangan produk, arsitektur AI, dan persiapan presentasi finalis bersama mentor." 
   },
   { 
     title: "Main Hackathon", 
     date: "19–20 Oktober", 
-    tag: "Puncak Kolaborasi",
+    tag: "",
     desc: "Hari 1: Ideasi dan Pengembangan\nHari 2: Pembuatan Prototipe dan Presentasi." 
   }
 ];
@@ -169,16 +165,8 @@ export function Timeline() {
                       <div className="absolute inset-0 bg-gradient-to-br from-accent-gold/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                       
                       <div className="relative z-10">
-                        <div className="flex flex-wrap items-center gap-3 mb-4">
-                          <div className="inline-flex items-center gap-2 text-sm font-semibold text-primary-700">
-                            <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-primary-100 text-primary-700">
-                              ★
-                            </span>
-                            <span>{event.tag}</span>
-                          </div>
-                          <div className="inline-block px-4 py-1.5 rounded-full bg-primary-50 text-primary-700 font-bold text-sm border border-primary-100">
-                            {event.date}
-                          </div>
+                        <div className="inline-block px-4 py-1.5 rounded-full bg-primary-50 text-primary-700 font-bold text-sm border border-primary-100 mb-4">
+                          {event.date}
                         </div>
                         <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary-700 transition-colors">{event.title}</h3>
                         {Array.isArray(event.desc) ? (

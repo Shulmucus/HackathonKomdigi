@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
 
 const requirements = [
-  "Peserta adalah Aparatur Sipil Negara (ASN) aktif di lingkungan Kementerian Komunikasi dan Digital.",
+  "Peserta adalah Pegawai aktif di lingkungan Kementerian Komunikasi dan Digital.",
   "Pendaftaran dilakukan secara individu atau tim dengan komposisi 3-4 anggota.",
   "Telah memiliki ide pengembangan use case kecerdasan artifisial sesuai dengan tema yang diberikan.",
   "Tim dapat terdiri atas lintas satuan kerja (unit) untuk mendorong kolaborasi.",

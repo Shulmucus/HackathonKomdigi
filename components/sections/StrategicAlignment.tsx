@@ -121,7 +121,7 @@ export function StrategicAlignment() {
             viewport={{ once: true }}
             className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-white leading-tight tracking-tight"
           >
-            Kompetisi inovasi internal bagi ASN Komdigi untuk menciptakan solusi nyata melalui Dashboard Decision Support terintegrasi berbasis AI.
+            Kompetisi inovasi internal bagi Pegawai Komdigi untuk menciptakan solusi nyata melalui Dashboard Decision Support terintegrasi berbasis AI.
           </motion.h2>
         </div>
 

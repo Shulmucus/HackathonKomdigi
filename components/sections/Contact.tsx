@@ -64,14 +64,18 @@ export function Contact() {
               
               <div className="flex flex-col gap-3 w-full">
                 <a 
-                  href={`mailto:${contact.email}`} 
+                  href={`https://mail.google.com/mail/?view=cm&fs=1&to=${contact.email}`} 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center justify-center gap-3 bg-white/5 hover:bg-primary-600 border border-white/10 p-3 rounded-xl transition-all text-white group/link"
                 >
                   <Mail className="w-5 h-5 text-primary-400 group-hover/link:text-white transition-colors" />
                   <span className="font-medium tracking-wide">{contact.email}</span>
                 </a>
                 <a 
-                  href={`tel:${contact.phone.replace(/\s+/g, '')}`} 
+                  href={`https://wa.me/${contact.phone.replace(/[^\d]/g, '')}`} 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center justify-center gap-3 bg-white/5 hover:bg-primary-600 border border-white/10 p-3 rounded-xl transition-all text-white group/link"
                 >
                   <Phone className="w-5 h-5 text-primary-400 group-hover/link:text-white transition-colors" />

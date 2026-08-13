@@ -9,7 +9,7 @@ export function Ticker() {
               <span className="text-primary-700/30"> &nbsp;·&nbsp; </span>
             </span>
             <span className="inline-flex items-center gap-3 text-sm font-extrabold text-primary-700 px-7">
-              🚀 Kick-Off 14 Juli 2026
+              🗓️ Pendaftaran: 24 Agustus – 10 September
               <span className="text-primary-700/30"> &nbsp;·&nbsp; </span>
             </span>
             <span className="inline-flex items-center gap-3 text-sm font-extrabold text-primary-700 px-7">
@@ -21,7 +21,7 @@ export function Ticker() {
               <span className="text-primary-700/30"> &nbsp;·&nbsp; </span>
             </span>
             <span className="inline-flex items-center gap-3 text-sm font-extrabold text-primary-700 px-7">
-              👥 Khusus ASN Komdigi
+              👥 Khusus Pegawai Komdigi
               <span className="text-primary-700/30"> &nbsp;·&nbsp; </span>
             </span>
             <span className="inline-flex items-center gap-3 text-sm font-extrabold text-primary-700 px-7">
@@ -29,7 +29,7 @@ export function Ticker() {
               <span className="text-primary-700/30"> &nbsp;·&nbsp; </span>
             </span>
             <span className="inline-flex items-center gap-3 text-sm font-extrabold text-primary-700 px-7">
-              📅 Main Event 21–22 Sept 2026
+              📅 Main Hackathon 19–20 Oktober 2026
               <span className="text-primary-700/30"> &nbsp;·&nbsp; </span>
             </span>
           </div>
