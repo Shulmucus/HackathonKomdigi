@@ -155,7 +155,7 @@ export function StrategicAlignment() {
                         onClick={() => toggleItem(itemKey)}
                         className="w-full flex items-center justify-between gap-4 px-5 py-4 text-left hover:bg-white/10 transition-colors"
                       >
-                        <span className="text-white text-[15px] font-semibold leading-relaxed">
+                        <span className="text-white text-[15px] font-semibold leading-relaxed text-justify">
                           {item.title}
                         </span>
                         <ChevronDown
@@ -176,7 +176,7 @@ export function StrategicAlignment() {
                                 {item.subitems.map((subitem, k) => (
                                   <li key={k} className="flex items-start gap-3">
                                     <div className="w-1.5 h-1.5 rounded-full bg-accent-gold mt-2 flex-shrink-0" />
-                                    <span className="text-white/80 text-sm leading-relaxed">{subitem}</span>
+                                    <span className="text-white/80 text-sm leading-relaxed text-justify">{subitem}</span>
                                   </li>
                                 ))}
                               </ul>
