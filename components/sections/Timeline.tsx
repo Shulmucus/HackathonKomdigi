@@ -20,7 +20,11 @@ const timelineEvents = [
     title: "Training Manajerial", 
     date: "16 September", 
     tag: "",
-    desc: ""
+    desc: [
+      "Perkembangan kecerdasan artifisial",
+      "Fungsi Al di komputasi awan",
+      "Metode identifikasi kebutuhan unit kerja"
+    ]
   },
   { 
     title: "Training AI Beginner", 
