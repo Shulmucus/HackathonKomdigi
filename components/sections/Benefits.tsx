@@ -49,7 +49,7 @@ export function Benefits() {
             transition={{ delay: 0.1 }}
             className="text-white/80 max-w-2xl mx-auto"
           >
-            Berbagai keuntungan yang bisa Anda dapatkan dengan mengikuti Hackathon Internal Komdigi 2026.
+            Berbagai keuntungan yang bisa Anda dapatkan dengan mengikuti Hackathon AI Komdigi.
           </motion.p>
         </div>
 

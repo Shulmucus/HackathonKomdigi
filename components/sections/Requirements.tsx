@@ -37,7 +37,7 @@ export function Requirements() {
             transition={{ delay: 0.1 }}
             className="text-gray-600 max-w-2xl mx-auto"
           >
-            Pastikan Anda memenuhi persyaratan berikut sebelum mendaftar Hackathon Internal Komdigi 2026.
+            Pastikan Anda memenuhi persyaratan berikut sebelum mendaftar Hackathon AI Komdigi.
           </motion.p>
         </div>
 

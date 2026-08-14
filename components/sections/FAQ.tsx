@@ -30,7 +30,7 @@ export function FAQ() {
               transition={{ delay: 0.1 }}
               className="text-gray-600"
             >
-              Pertanyaan yang sering diajukan seputar Hackathon Internal Komdigi 2026.
+              Pertanyaan yang sering diajukan seputar Hackathon AI Komdigi.
             </motion.p>
           </div>
 

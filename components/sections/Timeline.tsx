@@ -14,7 +14,7 @@ const timelineEvents = [
     title: "Penutupan Pendaftaran", 
     date: "10 September", 
     tag: "Persiapan Tim",
-    desc: "Penyusunan tim peserta pelatihan Hackathon termasuk pembentukan tim bagi pendaftar individu" 
+    desc: "" 
   },
   { 
     title: "Training Manajerial", 

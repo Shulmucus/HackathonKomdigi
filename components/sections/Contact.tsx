@@ -44,7 +44,7 @@ export function Contact() {
             transition={{ delay: 0.1 }}
             className="text-primary-100 text-lg max-w-2xl mx-auto"
           >
-            Hubungi panitia Hackathon Internal Komdigi 2026 untuk pertanyaan lebih lanjut.
+            Hubungi panitia Hackathon AI Komdigi untuk pertanyaan lebih lanjut.
           </motion.p>
         </div>
 
