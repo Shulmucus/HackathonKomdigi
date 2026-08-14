@@ -11,12 +11,6 @@ const timelineEvents = [
     desc: "" 
   },
   { 
-    title: "Penutupan Pendaftaran", 
-    date: "10 September", 
-    tag: "Persiapan Tim",
-    desc: "" 
-  },
-  { 
     title: "Training Manajerial", 
     date: "16 September", 
     tag: "",
