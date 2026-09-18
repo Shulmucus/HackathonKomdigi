@@ -5,84 +5,40 @@ import { motion, useScroll, useTransform } from "framer-motion";
 
 const timelineEvents = [
   { 
-    title: "Sosialisasi dan Pendaftaran", 
-    date: "24 Agustus – 10 September", 
+    title: "Pendaftaran & Publikasi", 
+    date: "21 Sept - 8 Oktober 2026",
     tag: "",
-    desc: "" 
+    desc: "Publikasi melalui microsite, Portal Komdigi dan pemberitahuan kepada Satuan Kerja melalui Nota Dinas tentang pembukaan kegiatan Hackathon. Pendaftaran dilakukan secara individu atau tim." 
   },
   { 
-    title: "Training Manajerial", 
-    date: "16 September", 
+    title: "Pelatihan Manejerial & Teknis AI", 
+    date: "19 Oktober - 12 November 2026", 
     tag: "",
-    desc: [
-      "Perkembangan kecerdasan artifisial",
-      "Fungsi Al di komputasi awan",
-      "Metode identifikasi kebutuhan unit kerja"
-    ]
+    desc: "Pelatihan komprehensif mulai dari pemahaman manajerial AI (Beginner to Advanced) untuk peserta."
   },
   { 
-    title: "Training AI Beginner", 
-    date: "17 September", 
-    tag: "",
-    desc: [
-      "Prompt Engineering dan Praktek",
-      "Semantic Search dan Praktek"
-    ]
-  },
-  { 
-    title: "Training AI Intermediate", 
-    date: "24 September", 
-    tag: "",
-    desc: [
-      "Best Practice Orkestrasi AI dan Prakteknya",
-      "Analisis data dan Prakteknya serta Pengenalan Machine learning dan Praktek"
-    ]
-  },
-  { 
-    title: "Training AI Advanced", 
-    date: "1 Oktober", 
-    tag: "",
-    desc: [
-      "Specification-Driven Development (AI Asisted Coding)",
-      "AI Agent Governance Platform",
-      "AI-Driven Development with data-as-aservice Framework"
-    ]
-  },
-  { 
-    title: "Batas akhir pengumpulan Proposal", 
-    date: "4 Oktober", 
+    title: "Batas Akhir Pengumpulan Proposal", 
+    date: "12 November 2026", 
     tag: "",
     desc: "Batas akhir finalisasi proposal ide inovasi dari para peserta."
   },
   { 
-    title: "Seleksi Top 6", 
-    date: "6 Oktober", 
+    title: "Seleksi & Pengumuman Top 6 Finalis", 
+    date: "13 November 2026", 
     tag: "",
-    desc: "Seleksi proposal terbaik untuk melaju ke tahap main event hackathon." 
+    desc: "Seleksi proposal terbaik dan pengumuman Top 6 proposal untuk melaju ke tahap main event hackathon." 
   },
   { 
-    title: "Pengumuman Finalis", 
-    date: "7 Oktober", 
-    tag: "",
-    desc: "" 
-  },
-  { 
-    title: "Finalist Briefing", 
-    date: "9 Oktober", 
-    tag: "",
-    desc: "Pengarahan teknis, aturan main, kriteria penilaian, dan pembagian jadwal mentoring untuk para finalis sebelum kompetisi dimulai." 
-  },
-  { 
-    title: "Mentoring 1-on-1", 
-    date: "12–16 Oktober", 
+    title: "Mentoring 1 on 1", 
+    date: "14 - 23 November 2026", 
     tag: "",
     desc: "Sesi konsultasi mendalam pematangan produk, arsitektur AI, dan persiapan presentasi finalis bersama mentor." 
   },
   { 
-    title: "Main Hackathon", 
-    date: "19–20 Oktober", 
+    title: "Main Hackathon & Pengumuman Pemenang", 
+    date: "24 - 25 November", 
     tag: "",
-    desc: "Hari 1: Ideasi dan Pengembangan\nHari 2: Pembuatan Prototipe dan Presentasi." 
+    desc: "Puncak acara Hackathon: Ideasi, pengembangan prototipe, presentasi finalis, dan pengumuman pemenang." 
   }
 ];
 
