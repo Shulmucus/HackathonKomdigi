@@ -11,7 +11,7 @@ const timelineEvents = [
     desc: "Publikasi melalui microsite, Portal Komdigi dan pemberitahuan kepada Satuan Kerja melalui Nota Dinas tentang pembukaan kegiatan Hackathon. Pendaftaran dilakukan secara individu atau tim." 
   },
   { 
-    title: "Pelatihan Manejerial & Teknis AI", 
+    title: "Pelatihan Manajerial & Teknis AI", 
     date: "19 Oktober - 12 November 2026", 
     tag: "",
     desc: "Pelatihan komprehensif mulai dari pemahaman manajerial AI (Beginner to Advanced) untuk peserta."
