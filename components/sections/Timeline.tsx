@@ -8,7 +8,7 @@ const timelineEvents = [
     title: "Pendaftaran & Publikasi", 
     date: "21 Sept - 8 Oktober 2026",
     tag: "",
-    desc: "" 
+    desc: "Pendaftaran Terbuka bagi ASN dan Non ASN Kementerian Komdigi, baik secara individu maupun tim" 
   },
   { 
     title: "Pelatihan Manajerial & Teknis AI", 
