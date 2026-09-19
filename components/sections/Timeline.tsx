@@ -8,7 +8,7 @@ const timelineEvents = [
     title: "Pendaftaran & Publikasi", 
     date: "21 Sept - 8 Oktober 2026",
     tag: "",
-    desc: "Publikasi melalui microsite, Portal Komdigi dan pemberitahuan kepada Satuan Kerja melalui Nota Dinas tentang pembukaan kegiatan Hackathon. Pendaftaran dilakukan secara individu atau tim." 
+    desc: "" 
   },
   { 
     title: "Pelatihan Manajerial & Teknis AI", 
