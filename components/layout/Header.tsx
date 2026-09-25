@@ -44,18 +44,12 @@ export function Header() {
         {/* Right: CTA Buttons & Mobile Toggle */}
         <div className="flex-1 flex items-center justify-end gap-3 md:gap-4">
           <a
-            href="/Hackathon%20Internal%20KOMDIGI%202026%20Booklet%20Cover.pdf"
+            href="/1. FORMULIR PENDAFTARAN PESERTA HACKATHON INTERNAL KOMDIGI 2026.docx"
             download
-            className="hidden lg:flex items-center justify-center h-10 px-6 rounded-lg bg-white/5 hover:bg-white/10 border border-white/20 text-sm font-semibold text-white transition-colors"
-          >
-            Download Booklet
-          </a>
-          <Link
-            href="#"
             className="hidden sm:flex items-center justify-center h-10 px-6 rounded-lg bg-accent-gold hover:bg-yellow-400 text-sm font-extrabold text-primary-700 transition-colors group shadow-lg shadow-accent-gold/20"
           >
             Daftar <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
-          </Link>
+          </a>
 
           {/* Mobile Menu Toggle Button */}
           <button
@@ -95,18 +89,13 @@ export function Header() {
               </nav>
               
               <div className="flex flex-col gap-3 pt-4 border-t border-white/10">
-                <Link
-                  href="#"
+                <a
+                  href="/1. FORMULIR PENDAFTARAN PESERTA HACKATHON INTERNAL KOMDIGI 2026.docx"
+                  download
+                  onClick={() => setIsMobileMenuOpen(false)}
                   className="flex items-center justify-center h-12 w-full rounded-lg bg-accent-gold hover:bg-yellow-400 text-base font-extrabold text-primary-700 transition-colors"
                 >
                   Daftar Hackathon
-                </Link>
-                <a
-                  href="/Hackathon%20Internal%20KOMDIGI%202026%20Booklet%20Cover.pdf"
-                  download
-                  className="flex items-center justify-center h-12 w-full rounded-lg bg-white/5 hover:bg-white/10 border border-white/20 text-base font-semibold text-white transition-colors"
-                >
-                  Download Booklet
                 </a>
               </div>
             </div>

@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
 
 export function FAQ() {
 
@@ -43,12 +42,13 @@ export function FAQ() {
             viewport={{ once: true }}
             className="flex justify-center"
           >
-            <Link
-              href="#"
+            <a
+              href="/FAQ (Frequently Asked Questions).pdf"
+              download
               className="inline-flex items-center justify-center h-12 px-8 rounded-full bg-white border border-gray-200 shadow-sm hover:border-primary-400 hover:shadow-md text-sm font-bold text-primary-600 transition-all"
             >
               Lihat Dokumen FAQ Lengkap
-            </Link>
+            </a>
           </motion.div>
         </div>
       </div>

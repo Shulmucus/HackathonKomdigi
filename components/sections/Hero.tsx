@@ -1,9 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
 import Image from "next/image";
-import { ChevronRight, Download } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 
 export function Hero() {
   return (
@@ -67,20 +66,13 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
           className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4"
         >
-          <Link
-            href="#"
+          <a
+            href="/1. FORMULIR PENDAFTARAN PESERTA HACKATHON INTERNAL KOMDIGI 2026.docx"
+            download
             className="w-full sm:w-auto flex items-center justify-center h-12 px-8 rounded-lg bg-accent-gold hover:bg-yellow-400 text-base font-extrabold text-primary-700 transition-colors group shadow-lg shadow-accent-gold/20"
           >
             Daftar Hackathon
             <ChevronRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-          </Link>
-          <a
-            href="/Hackathon%20Internal%20KOMDIGI%202026%20Booklet%20Cover.pdf"
-            download
-            className="w-full sm:w-auto flex items-center justify-center h-12 px-8 rounded-lg bg-white/5 hover:bg-primary-50 border border-primary-200 text-base font-semibold text-primary-700 transition-colors group"
-          >
-            <Download className="w-4 h-4 mr-2" />
-            Download Booklet
           </a>
         </motion.div>
       </div>

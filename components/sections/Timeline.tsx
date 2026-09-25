@@ -6,7 +6,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 const timelineEvents = [
   { 
     title: "Pendaftaran & Publikasi", 
-    date: "21 Sept - 8 Oktober 2026",
+    date: "25 Sept - 8 Oktober 2026",
     tag: "",
     desc: "Pendaftaran Terbuka bagi ASN dan Non ASN Kementerian Komdigi, baik secara individu maupun tim" 
   },

@@ -9,7 +9,7 @@ export function Ticker() {
               <span className="text-primary-700/30"> &nbsp;·&nbsp; </span>
             </span>
             <span className="inline-flex items-center gap-3 text-sm font-extrabold text-primary-700 px-7">
-              🗓️ Pendaftaran: 21 Sept - 8 Okt 2026
+              🗓️ Pendaftaran: 25 Sept - 8 Okt 2026
               <span className="text-primary-700/30"> &nbsp;·&nbsp; </span>
             </span>
             <span className="inline-flex items-center gap-3 text-sm font-extrabold text-primary-700 px-7">
