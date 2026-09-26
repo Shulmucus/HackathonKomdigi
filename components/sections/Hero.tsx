@@ -67,8 +67,9 @@ export function Hero() {
           className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <a
-            href="/1. FORMULIR PENDAFTARAN PESERTA HACKATHON INTERNAL KOMDIGI 2026.docx"
-            download
+            href="https://drive.google.com/drive/folders/1ixuqc0cGclRCmcsRTDFVfQnveBKhyozR?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-full sm:w-auto flex items-center justify-center h-12 px-8 rounded-lg bg-accent-gold hover:bg-yellow-400 text-base font-extrabold text-primary-700 transition-colors group shadow-lg shadow-accent-gold/20"
           >
             Daftar Hackathon

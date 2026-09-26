@@ -44,8 +44,9 @@ export function Header() {
         {/* Right: CTA Buttons & Mobile Toggle */}
         <div className="flex-1 flex items-center justify-end gap-3 md:gap-4">
           <a
-            href="/1. FORMULIR PENDAFTARAN PESERTA HACKATHON INTERNAL KOMDIGI 2026.docx"
-            download
+            href="https://drive.google.com/drive/folders/1ixuqc0cGclRCmcsRTDFVfQnveBKhyozR?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden sm:flex items-center justify-center h-10 px-6 rounded-lg bg-accent-gold hover:bg-yellow-400 text-sm font-extrabold text-primary-700 transition-colors group shadow-lg shadow-accent-gold/20"
           >
             Daftar <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
@@ -90,8 +91,9 @@ export function Header() {
               
               <div className="flex flex-col gap-3 pt-4 border-t border-white/10">
                 <a
-                  href="/1. FORMULIR PENDAFTARAN PESERTA HACKATHON INTERNAL KOMDIGI 2026.docx"
-                  download
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="flex items-center justify-center h-12 w-full rounded-lg bg-accent-gold hover:bg-yellow-400 text-base font-extrabold text-primary-700 transition-colors"
                 >
